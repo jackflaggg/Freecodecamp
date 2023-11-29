@@ -1,0 +1,1 @@
+var product = 8 * 10; //product gets the value 80
