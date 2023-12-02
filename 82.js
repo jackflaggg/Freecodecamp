@@ -25,10 +25,7 @@ function isEgual(objOne, objTwo){
             }
         }
     }
-    let resultOne = Object.keys(objOne).length;
-    let resultTwo = Object.keys(objTwo).length;
-
-    return items >= resultOne && items >= resultTwo;
+    return items >= Object.keys(objOne).length && items >= Object.keys(objTwo).length;
 }
 
-console.log(isEgual(arrOne,ArrThree))
+console.log(isEgual(arrOne,arrTwo))
