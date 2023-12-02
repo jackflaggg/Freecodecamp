@@ -7,11 +7,9 @@ function getMaxSubSum(arr) {
         } else {
             currentSum = arr[i];
         }
-        if (currentSum > maxSum) {
-            maxSum = currentSum;
-        }
+        maxSum = Math.max(maxSum, currentSum)
     }
         return console.log(maxSum > 0 ? maxSum : 0);
 }
 
-getMaxSubSum([-2, -8, -5, -1, -2, -3, -2])
+getMaxSubSum([2, 8, -5, -1, 2, -3, -2])
